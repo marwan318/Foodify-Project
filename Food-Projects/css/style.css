@@ -1,0 +1,442 @@
+.my-nav{
+    background-color: #100E02;
+}
+
+
+p{
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1::selection{
+    background-color: #DE6528;
+}
+h2::selection{
+     background-color: #DE6528;
+}
+h3::selection{
+     background-color: #DE6528;
+}
+h4::selection{
+     background-color: #DE6528;
+}
+
+h5::selection{
+     background-color: #DE6528;
+}
+
+
+p::selection{
+    background-color: #DE6528;
+}
+.active{
+    color: #DE6528   !important;
+   
+}
+
+
+.my-nav .nav-link{
+    color: white;
+}
+
+
+.my-icon{
+ font-size: 24px;
+
+  color: #DE6528 
+}
+
+body{
+    font-family:  "Fira Sans", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+
+.pills{
+    background-color: #DE6528;
+    color: white;
+    border: 0.5px solid transparent;
+    padding: 5px 5px;
+}
+
+.header{
+    /* width: 90%; */
+    background-image: url(../assets/imges/blurred-busy-restaurant-background-free-photo.jfif);
+    background-size: cover;
+    
+
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    
+}
+.header-caption{
+    font-size: 24px ;
+ color: white;
+}
+
+
+.footer-description ul{
+
+    list-style: none;
+
+}
+
+
+.footer-bg{
+    background-color: #0b0a05f4;
+}
+
+.icons{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.special-font{
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.why-font{
+   font-family: "Lobster Two", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+ 
+  font-size: 40px;
+}
+.why-us {
+  padding: 60px 10%;
+  text-align: center;
+  position: relative;
+}
+
+.delivery{
+width: 80%;
+}
+
+.delivery{
+    width: 70%;
+}
+
+
+
+
+.menu-preview {
+  padding: 60px 10%;
+  text-align: center;
+  background: #f8f8f8;
+  position: relative;
+ 
+}
+
+.menu-items {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 80px;
+
+
+
+}
+
+
+
+.item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+
+.item:hover{
+background-color: #DE6528;
+color: white;
+}
+
+
+
+.knife-icon{
+  color: #DE6528;
+  font-size: 40px;
+}
+.knife-icon:hover{
+  color: white;
+}
+
+.how-it-works {
+  padding: 60px 10%;
+  text-align: center;
+
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+
+
+
+.step {
+  background: #DE6528;
+  padding: 25px;
+  border-radius: 50%;
+  width: 150px;
+  color: white;
+}
+
+
+
+
+
+
+/* التنسيق الأساسي للشاشات الكبيرة (الديسكتوب) */
+.img-attach {
+    background-image: url('../assets/imges/meal-5.jpg'); /* حط مسار الصورة الصح هنا */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* الباراكلس شغال عادي على اللاب توب */
+    min-height: 400px; /* تقدر تغير الطول براحتك */
+    width: 100%;
+}
+
+/* تظبيط الريسبونسيف للشاشات الصغيرة (الموبايل والتابلت) */
+@media (max-width: 768px) {
+    .img-attach {
+        background-attachment: scroll; /* ده اللي هيحل مشكلة الموبايل */
+        background-position: center center;
+        min-height: 250px; /* صغرنا الطول شوية عشان يناسب الموبايل */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta {
+  padding: 60px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.cta button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.cta button:hover{
+    background-color: #DE6528;
+    color: white;
+} 
+
+.main-color{
+  color: #DE6528;
+}
+
+
+.main-footer {
+  background-color: #111;
+
+
+    width: 100%;
+  background-color: #111; /* نفس لون الفوتر عندك */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+ 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brand h4 {
+  color: #DE6528;
+  margin-bottom: 5px;
+}
+
+.brand p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: #DE6528;
+}
+
+.social a {
+  color: #bbb;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.social a:hover {
+  color: #DE6528;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}
+
+
+.slider-sizing{
+
+  width:100%;
+  height: 700px;
+
+}
+
+.card img{
+height: 150px;}
+ 
+.nav-tabs-color{
+  background-color: #100E02;
+}
+
+.opt1{
+  width: 100px;
+}
+
+
+
+.card-i {
+font-size: 24px;
+
+  color: #DE6528 
+
+}
+
+.icons{
+  display: flex;
+}
+.cart-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cart {
+    --bs-btn-color:#DE6528 ;
+    --bs-btn-border-color: #DE6528 ;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #DE6528 ;
+    --bs-btn-hover-border-color: #DE6528 ;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #DE6528 ;
+    --bs-btn-active-border-color: #DE6528 ;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #DE6528 ;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #DE6528 ;
+    --bs-gradient: none;
+}
+
+
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+/* استخدام الخطوط */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap; /* يخلي العناصر تنتقل لسطر جديد لو ضاقت الشاشة */
+  justify-content: space-around; /* توزع العناصر أفقياً */
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px; /* مسافات بين الروابط */
+}
+
+
+/* لو الشاشة أقل من 600px */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* خلي العناصر فوق بعض */
+    text-align: center;
+  }
+}

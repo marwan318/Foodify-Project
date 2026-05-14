@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Foodify</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="bg-light pt-5">
+
+   <div class="navbar">
+      <nav class="navbar navbar-expand-lg my-nav fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+           <h2 class="active">Foodify</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+
+          
+
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+        
+            </ul>
+
+            <ul class="navbar-nav mb-2 mb-lg-0  mx-5">
+           
+
+
+                 <button id="loginBtn" class="  btn btn-outline-success mx-5">Log in</button>
+          <button id="logoutBtn" onclick="logout()" class="btn btn-outline-danger d-none">Log out</button>
+           
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card bg-dark text-white p-4 rounded-4 mb-4 shadow">
+            <h4 class="fw-bold mb-3"><i class="fas fa-user-md text-orange"></i> Select your allergies so we can keep you safe:</h4>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+                <div class="form-check"><input class="form-check-input allergy-check" type="checkbox" value="Milk" id="m1"><label class="form-check-label" for="m1">Milk</label></div>
+                <div class="form-check"><input class="form-check-input allergy-check" type="checkbox" value="Gluten" id="m2"><label class="form-check-label" for="m2">Gluten</label></div>
+                <div class="form-check"><input class="form-check-input allergy-check" type="checkbox" value="Fish" id="m3"><label class="form-check-label" for="m3">Fish</label></div>
+                <div class="form-check"><input class="form-check-input allergy-check" type="checkbox" value="Nuts" id="m4"><label class="form-check-label" for="m4">Nuts</label></div>
+                <div class="form-check"><input class="form-check-input allergy-check" type="checkbox" value="Eggs" id="m5"><label class="form-check-label" for="m5">Eggs</label></div>
+            </div>
+            <h6>Sugar Preference:</h6>
+            <div class="d-flex gap-3 mb-3">
+                <div class="form-check"><input class="form-check-input" type="radio" name="sugar" value="Normal" checked id="s1"><label class="form-check-label" for="s1">Normal</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="sugar" value="Low" id="s2"><label class="form-check-label" for="s2">Low Sugar</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="sugar" value="Diet" id="s3"><label class="form-check-label text-orange" for="s3">Diet (No Sugar)</label></div>
+            </div>
+          <button onclick="saveProfile()" class="btn btn-orange w-100 fw-bold py-2 rounded-pill mt-3">
+    Save Health Profile
+</button>
+        </div>
+
+      <div class="text-center mb-4">
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3 bg-dark p-3 rounded-5">
+                <button class="btn btn-orange px-3" onclick="filterCategory('All')">All Items</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Fried Chicken')">Fried Chicken</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Pizza')">Pizza</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Burger')">Burger</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Salad')">Salad</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Drinks')">Drinks</button>
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Dessert')">Dessert</button>
+                
+                <button class="btn btn-outline-light px-3" onclick="filterCategory('Fries')">Fries & Sides</button>
+            </div>
+            <input type="text" id="searchInput" class="form-control w-50 mx-auto rounded-pill" placeholder="Search for your item...">
+        </div>
+
+        <div id="rowdata" class="row g-4"></div>
+    </div>
+
+    <div id="mealModal" class="modal-overlay">
+        <div class="modal-content-custom bg-white">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="row g-0">
+                <div class="col-md-6"><img id="modalImage" class="w-100 h-100" style="object-fit: cover;"></div>
+                <div class="col-md-6 p-4">
+                    <h2 id="modalName" class="fw-bold"></h2>
+                    <h4 id="modalPrice" class="text-orange fw-bold"></h4>
+                    <hr>
+                    <h6><i class="fas fa-exclamation-triangle text-danger"></i> Allergens:</h6>
+                    <p id="modalAllergens" class="text-muted"></p>
+                    <div id="modalCustomization" class="bg-light p-3 rounded mb-3"></div>
+                    <div class="d-flex align-items-center gap-3 mb-4 justify-content-center">
+                        <button class="btn btn-outline-dark" onclick="changeQty(-1)">-</button>
+                        <span id="modalQty" class="fw-bold fs-5">1</span>
+                        <button class="btn btn-outline-dark" onclick="changeQty(1)">+</button>
+                    </div>
+                    <button id="modalAddToCartBtn" class="btn btn-orange btn-lg w-100 rounded-pill fw-bold shadow">Add to Cart (Check Allergy)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/menu.js"></script>
+      <script src="js/index.js"></script>
+    
+</body>
+</html>

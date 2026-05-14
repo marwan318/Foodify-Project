@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Foodify</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body style="background-color: #f8f9fa;">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header text-white text-center rounded-top-4" style="background-color: #1a1a1a; border-bottom: 3px solid #ff7a00;">
+                    <h3 class="mb-0 py-2"><i class="fas fa-plus-circle" style="color: #ff7a00;"></i> Add New Meal</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form id="addMealForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="fw-bold">Meal Name</label>
+                                <input type="text" id="mealName" class="form-control" placeholder="e.g. Spicy Zinger" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-bold">Price (EGP)</label>
+                                <input type="number" id="mealPrice" class="form-control" placeholder="e.g. 150" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-bold">Category</label>
+                                <select id="mealCategory" class="form-select" required>
+                                    <option value="Pizza">Pizza</option>
+                                    <option value="Burger">Burger</option>
+                                    <option value="Salad">Salad</option>
+                                    <option value="Drinks">Drinks</option>
+                                    <option value="Dessert">Dessert</option>
+                                    <option value="Fried Chicken">Fried Chicken</option>
+                                  <option value="Fries">Fries & Sides</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-bold">Image URL (Unsplash link)</label>
+                                <input type="url" id="mealImage" class="form-control" placeholder="https://images.unsplash.com/..." required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="fw-bold">Ingredients (Comma separated)</label>
+                                <input type="text" id="mealIngredients" class="form-control" placeholder="e.g. Chicken, Flour, Spices">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="fw-bold text-danger">Allergens (Comma separated)</label>
+                                <input type="text" id="mealAllergens" class="form-control" placeholder="e.g. Gluten, Milk">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-check form-switch fs-5">
+                                    <input class="form-check-input" type="checkbox" id="isFeatured">
+                                    <label class="form-check-label fw-bold" for="isFeatured">🔥 Show in "Featured Items" on Home/All?</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <button type="submit" class="btn btn-lg w-100 fw-bold shadow" style="background-color: #ff7a00; color: white;">
+                                    <i class="fas fa-save"></i> Save Meal to Database
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

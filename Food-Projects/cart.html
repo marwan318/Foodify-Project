@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Foodify</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="bg-light pt-5 mt-5">
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-orange" href="#">Foodify</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card p-4 rounded-4 shadow-sm">
+                    <h4 class="fw-bold mb-4">Items in your cart</h4>
+                    <div id="cartItems"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 rounded-4 shadow-sm text-center">
+                    <h4 class="fw-bold mb-4">Summary</h4>
+                    <p class="d-flex justify-content-between">Total Items: <span id="itemCount" class="fw-bold">0</span></p>
+                    <h3 class="d-flex justify-content-between fw-bold text-success">Total: <span id="totalPrice">0 EGP</span></h3>
+                    <button onclick="checkout()" class="btn btn-orange btn-lg w-100 rounded-pill mt-4 fw-bold">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodify</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="./assets/imges/favicon.png">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <nav class="navbar navbar-expand-lg my-nav fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <h2 class="active">Foodify</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mb-2 mb-lg-0 mx-5">
+                            <button id="loginBtn" class="btn btn-outline-success mx-5">Log in</button>
+                            <button id="logoutBtn" onclick="logout()" class="btn btn-outline-danger d-none">Log out</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid">
+            <div class="header d-flex justify-content-center align-items-center mt-5">
+                <div class="row w-100">
+                    <div class="col-lg-6">
+                        <div class="header-caption p-4">
+                            <div class="header-title mb-3">
+                                <button class="rounded-pill pills">Since 2020</button>
+                            </div>
+                            <h1>
+                                Enjoy tasty and healthy food with us.<br />
+                                We serve fresh, delicious meals for every taste
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="header-img">
+                            <img src="./assets/imges/a-plate-of-spaghetti-with-meat-and-cheese-on-a-wooden-table-ai-generated-free-photo.jpg" class="img-fluid w-75" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="why-us">
+            <h2 class="why-font">Why Choose Us</h2>
+
+            <div class="border"></div>
+
+            <div class="row mt-5 g-2">
+                <div class="col-lg-4">
+                    <div class="inner h-100">
+                        <div class="card w-100 h-100">
+                            <img src="./assets/imges/a-plate-of-spaghetti-with-meat-and-cheese-on-a-wooden-table-ai-generated-free-photo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Best Quality</h3>
+                                <p>Trusted ingredients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="inner h-100">
+                        <div class="card w-100 h-100">
+                            <img src="./assets/imges/food-delivery-service-fast-food-delivery-png.webp" class="card-img-top delivery" alt="...">
+                            <div class="card-body">
+                                <h3>Fast Delivery</h3>
+                                <p>On time, every time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="inner h-100">
+                        <div class="card w-100 h-100">
+                            <img src="./assets/imges/Fresh-hot-delicious-food-wallpaper.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Healthy Food</h3>
+                                <p>Fresh and balanced meals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <span class="special-font">Our Menu</span>
+
+        <section class="menu-preview ">
+
+            <ul class="nav justify-content-between nav-tabs-color p-3 rounded-3 nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-Allitems" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All Items</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger" id="pills-fried-tab" data-bs-toggle="pill" data-bs-target="#pills-Friedchicken" type="button" role="tab" aria-controls="pills-fried" aria-selected="false">Fried Chicken </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger " id="pills-pizza-tab" data-bs-toggle="pill" data-bs-target="#pills-Pizza" type="button" role="tab" aria-controls="pills-pizza" aria-selected="false">Pizza </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger" id="pills-salad-tab" data-bs-toggle="pill" data-bs-target="#pills-salad" type="button" role="tab" aria-controls="pills-salad" aria-selected="false">Salad </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger " id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-drinks" aria-selected="false">Drinks </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-bg-danger " id="pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#pills-dessert" type="button" role="tab" aria-controls="pills-dessert" aria-selected="false">Dessert </button>
+                </li>
+                <li class="nav-item" role="presentation">
+
+                </li>
+            </ul>
+
+            
+        </section>
+
+        <section class="img-attach"></section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">Choose Food</div>
+                <div class="step">Place Order</div>
+                <div class="step">Enjoy Meal</div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to order healthy food?</h2>
+            <button id="order">Order Now</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="brand">
+                <h4>Foodify</h4>
+                <p>Delicious food delivered to your door. Fresh, tasty, and healthy meals every day.</p>
+            </div>
+
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Foodify. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
