@@ -1,0 +1,958 @@
+[{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea72"
+  },
+  "name": "Ranch Chicken Pizza",
+  "price": 140,
+  "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500",
+  "category": "Pizza",
+  "isFeatured": true,
+  "ingredients": [
+    "Chicken",
+    "Ranch",
+    "Mozzarella"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 140,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea73"
+      }
+    },
+    {
+      "name": "Large",
+      "price": 200,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea74"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea75"
+  },
+  "name": "Classic Pepperoni",
+  "price": 120,
+  "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500",
+  "category": "Pizza",
+  "isFeatured": false,
+  "ingredients": [
+    "Pepperoni",
+    "Tomato Sauce",
+    "Cheese"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "price": 120,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea76"
+      }
+    },
+    {
+      "name": "Large",
+      "price": 180,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea77"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea78"
+  },
+  "name": "Double Smash Burger",
+  "price": 150,
+  "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
+  "category": "Burger",
+  "isFeatured": true,
+  "ingredients": [
+    "2 Beef Patties",
+    "Cheddar",
+    "Onions",
+    "Sauce"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "sizes": [
+    {
+      "name": "Double",
+      "price": 150,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea79"
+      }
+    },
+    {
+      "name": "Triple",
+      "price": 190,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea7a"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea7b"
+  },
+  "name": "Crispy Chicken Burger",
+  "price": 110,
+  "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=500",
+  "category": "Burger",
+  "isFeatured": false,
+  "ingredients": [
+    "Fried Chicken",
+    "Lettuce",
+    "Mayo"
+  ],
+  "allergens": [
+    "Gluten",
+    "Eggs"
+  ],
+  "sizes": [
+    {
+      "name": "Regular",
+      "price": 110,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea7c"
+      }
+    },
+    {
+      "name": "Spicy",
+      "price": 120,
+      "_id": {
+        "$oid": "69ee44415225df36c8f3ea7d"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea7e"
+  },
+  "name": "Grilled Chicken Salad",
+  "price": 90,
+  "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500",
+  "category": "Salad",
+  "isFeatured": true,
+  "ingredients": [
+    "Lettuce",
+    "Grilled Chicken",
+    "Parmesan"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "sizes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea7f"
+  },
+  "name": "Greek Salad",
+  "price": 75,
+  "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500",
+  "category": "Salad",
+  "isFeatured": false,
+  "ingredients": [
+    "Tomatoes",
+    "Cucumbers",
+    "Feta Cheese",
+    "Olives"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "sizes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea80"
+  },
+  "name": "Iced Spanish Latte",
+  "price": 75,
+  "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+  "category": "Drinks",
+  "isFeatured": true,
+  "ingredients": [
+    "Espresso",
+    "Milk",
+    "Ice"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "sizes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea82"
+  },
+  "name": "Spicy Broasted Meal",
+  "price": 160,
+  "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500",
+  "category": "Fried Chicken",
+  "isFeatured": true,
+  "ingredients": [
+    "4 Chicken Pieces",
+    "Fries",
+    "Garlic Dip"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "sizes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee44415225df36c8f3ea83"
+  },
+  "name": "Lotus Cheesecake",
+  "price": 85,
+  "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500",
+  "category": "Dessert",
+  "isFeatured": true,
+  "ingredients": [
+    "Cream Cheese",
+    "Lotus Biscuits",
+    "Sugar"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "sizes": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a00d2d16d26cb1f959dfabe"
+  },
+  "name": "BBQ Chicken Pizza",
+  "price": 250,
+  "image": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=800",
+  "category": "Pizza",
+  "ingredients": [
+    "Chicken",
+    "BBQ Sauce",
+    "Cheese",
+    "Onion",
+    "Dough"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a00d3076d26cb1f959dfabf"
+  },
+  "name": "Margherita Pizza",
+  "price": 180,
+  "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=800",
+  "category": "Pizza",
+  "ingredients": [
+    "Tomato Sauce",
+    "Mozzarella",
+    "Basil",
+    "Dough"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c4bd6d26cb1f959dfac0"
+  },
+  "name": "Classic Beef Burger",
+  "price": 170,
+  "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800",
+  "category": "Burger",
+  "ingredients": [
+    "Beef Patty",
+    "Lettuce",
+    "Tomato",
+    "Cheese",
+    "Bun"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c5286d26cb1f959dfac1"
+  },
+  "name": "Caesar Salad",
+  "price": 120,
+  "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+  "category": "Salad",
+  "ingredients": [
+    "Lettuce",
+    "Parmesan",
+    "Croutons",
+    "Caesar Dressing"
+  ],
+  "allergens": [
+    "Milk",
+    "Egg",
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c58c6d26cb1f959dfac2"
+  },
+  "name": "Mango Smoothie",
+  "price": 85,
+  "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4",
+  "category": "Drinks",
+  "ingredients": [
+    "Mango",
+    "Milk",
+    "Ice Cream",
+    "Sugar"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c5d96d26cb1f959dfac3"
+  },
+  "name": "Chocolate Lava Cake",
+  "price": 95,
+  "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c",
+  "category": "Dessert",
+  "ingredients": [
+    "Chocolate",
+    "Flour",
+    "Butter",
+    "Sugar",
+    "Egg"
+  ],
+  "allergens": [
+    "Gluten",
+    "Egg",
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c6316d26cb1f959dfac4"
+  },
+  "name": " Crispy Fried Chicken",
+  "price": 190,
+  "image": "https://images.unsplash.com/photo-1562967916-eb82221dfb92",
+  "category": "Fried Chicken",
+  "ingredients": [
+    "Chicken",
+    "Flour",
+    "Spices",
+    "Oil"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01c6626d26cb1f959dfac5"
+  },
+  "name": "Spicy Wings",
+  "price": 150,
+  "image": "https://images.unsplash.com/photo-1527477396000-e27163b481c2",
+  "category": "Fried Chicken",
+  "ingredients": [
+    "Chicken Wings",
+    "Hot Sauce",
+    "Flour",
+    "Spices"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "isFeatured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d1086d26cb1f959dfac6"
+  },
+  "name": "Veggie Pizza",
+  "price": 190,
+  "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
+  "category": "Pizza",
+  "ingredients": [
+    "Mushroom",
+    "Olive",
+    "Bell Pepper",
+    "Cheese",
+    "Dough"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d1f76d26cb1f959dfac7"
+  },
+  "name": "Meat Lovers Pizza",
+  "price": 280,
+  "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800",
+  "category": "Pizza",
+  "ingredients": [
+    "Beef",
+    "Sausage",
+    "Pepperoni",
+    "Cheese",
+    "Dough"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d51d6d26cb1f959dfac9"
+  },
+  "name": "Mushroom Swiss Burger",
+  "price": 210,
+  "image": "https://images.unsplash.com/photo-1550317138-10000687a72b?w=800",
+  "category": "Burger",
+  "ingredients": [
+    "Beef Patty",
+    "Mushroom",
+    "Swiss Cheese",
+    "Bun"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d5646d26cb1f959dfaca"
+  },
+  "name": "Chicken Caesar Salad",
+  "price": 145,
+  "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
+  "category": "Salad",
+  "ingredients": [
+    "Chicken",
+    "Lettuce",
+    "Parmesan",
+    "Croutons",
+    "Caesar Sauce"
+  ],
+  "allergens": [
+    "Milk",
+    "Egg",
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d5cf6d26cb1f959dfacb"
+  },
+  "name": "Tuna Salad",
+  "price": 135,
+  "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800",
+  "category": "Salad",
+  "ingredients": [
+    "Tuna",
+    "Lettuce",
+    "Corn",
+    "Tomato",
+    "Olive"
+  ],
+  "allergens": [
+    "Fish"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d6126d26cb1f959dfacc"
+  },
+  "name": "Avocado Salad",
+  "price": 155,
+  "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800",
+  "category": "Salad",
+  "ingredients": [
+    "Avocado",
+    "Tomato",
+    "Lettuce",
+    "Onion",
+    "Lemon"
+  ],
+  "allergens": [
+    "None"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d74b6d26cb1f959dfacf"
+  },
+  "name": "Chocolate Frappuccino",
+  "price": 110,
+  "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800",
+  "category": "Drinks",
+  "ingredients": [
+    "Coffee",
+    "Chocolate",
+    "Milk",
+    "Ice"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d7a36d26cb1f959dfad0"
+  },
+  "name": "Red Velvet Cake",
+  "price": 120,
+  "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=800",
+  "category": "Dessert",
+  "ingredients": [
+    "Flour",
+    "Cocoa",
+    "Cream Cheese",
+    "Sugar",
+    "Egg"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk",
+    "Egg"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d7e06d26cb1f959dfad1"
+  },
+  "name": "Donuts Box",
+  "price": 130,
+  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800",
+  "category": "Dessert",
+  "ingredients": [
+    "Flour",
+    "Chocolate",
+    "Sugar",
+    "Milk"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk",
+    "Egg"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d8386d26cb1f959dfad2"
+  },
+  "name": "Brownies",
+  "price": 90,
+  "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800",
+  "ingredients": [
+    "Chocolate",
+    "Butter",
+    "Flour",
+    "Sugar",
+    "Egg"
+  ],
+  "allergens": [
+    "Gluten",
+    "Milk",
+    "Egg"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d9556d26cb1f959dfad3"
+  },
+  "name": "Chicken Strips",
+  "price": 130,
+  "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800",
+  "category": "Fried Chicken",
+  "ingredients": [
+    "Chicken",
+    "Flour",
+    "Spices",
+    "Oil"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01d98f6d26cb1f959dfad4"
+  },
+  "name": "Family Bucket",
+  "price": 410,
+  "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800",
+  "category": "Fried Chicken",
+  "ingredients": [
+    "Chicken Pieces",
+    "Fries",
+    "Sauce",
+    "Spices"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01e77a6d26cb1f959dfad7"
+  },
+  "name": "Loaded Fries",
+  "price": 120,
+  "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=800",
+  "category": "Fries",
+  "ingredients": [
+    "Potato",
+    "Cheese",
+    "Bacon",
+    "Sauce"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01e8696d26cb1f959dfad8"
+  },
+  "name": "Ice Cold Cola",
+  "price": 50,
+  "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=800",
+  "category": "Drinks",
+  "ingredients": [
+    "Cola",
+    "Ice",
+    ""
+  ],
+  "allergens": [
+    "None"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01e8fc6d26cb1f959dfada"
+  },
+  "name": "Fresh Orange Juice",
+  "price": 45,
+  "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=800",
+  "category": "Drinks",
+  "ingredients": [
+    "Fresh Oranges",
+    "Ice",
+    "Sugar"
+  ],
+  "allergens": [
+    "None"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01e95e6d26cb1f959dfadb"
+  },
+  "name": "Iced Caramel Macchiato",
+  "price": 85,
+  "image": "data:image/jpeg;base64,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",
+  "category": "Drinks",
+  "ingredients": [
+    "Espresso",
+    "Milk",
+    "Caramel Syrup",
+    "Ice"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01eaeb6d26cb1f959dfadd"
+  },
+  "name": "Strawberry Ice Cream",
+  "price": 65,
+  "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=800",
+  "category": "Dessert",
+  "ingredients": [
+    "Milk",
+    "Strawberry",
+    "Sugar"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01fb2a4ff0d683da73460a"
+  },
+  "name": "Cheesy Fries",
+  "price": 100,
+  "image": "https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg",
+  "category": "Fries",
+  "ingredients": [],
+  "allergens": [],
+  "isFeatured": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a01fbd14ff0d683da73460c"
+  },
+  "name": "Mozzarella Sticks",
+  "price": 60,
+  "image": "https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=800",
+  "category": "Fries",
+  "ingredients": [],
+  "allergens": [],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0200824ff0d683da734612"
+  },
+  "name": "Crispy Onion Rings",
+  "price": 70,
+  "image": "https://smokinandgrillinwitab.com/wp-content/uploads/2025/02/iStock-2188707691-scaled.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Onion",
+    "Flour",
+    "Spices",
+    "Ranch Dip"
+  ],
+  "allergens": [
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0200de4ff0d683da734613"
+  },
+  "name": "Seasoned Curly Fries",
+  "price": 50,
+  "image": "https://cdn.theliveinkitchen.com/wp-content/uploads/2022/05/03140850/Frozen-Curly-Fries-Air-Fryer-The-Live-In-Kitchen-5.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Curly Potato",
+    "Paprika",
+    "Garlic Powder"
+  ],
+  "allergens": [
+    "None"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0201614ff0d683da734614"
+  },
+  "name": "Extra Ranch Sauce",
+  "price": 20,
+  "image": "https://wraphouz.net/wp-content/uploads/2025/07/WRAP-HOUZ-RANCH-DRESSING-scaled.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Mayo",
+    "Herbs",
+    "Sour Cream"
+  ],
+  "allergens": [
+    "Milk",
+    "Eggs"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a02076c4ff0d683da734615"
+  },
+  "name": "7Up cola",
+  "price": 50,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIdiwuDexI_XbR_Y-FyjCkj8XE6s2pDb0IA&s",
+  "category": "Drinks",
+  "ingredients": [
+    "Soda",
+    "lemon"
+  ],
+  "allergens": [
+    "None"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a020faf4ff0d683da734616"
+  },
+  "name": "Potato Salad",
+  "price": 100,
+  "image": "https://www.allrecipes.com/thmb/VlNKh_ty-dSN9Kl0m3qkW-C3X1U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/232864-potato-salad-VAT-008-4x3-7aa460185c7b45adbdf17c5a2425c3cc.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Boiled Potatoes",
+    "Mayonnaise",
+    "Parsley",
+    "Black Pepper",
+    "Mustard"
+  ],
+  "allergens": [
+    "Eggs (in mayo)"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0210344ff0d683da734617"
+  },
+  "name": "Savory Hashrice",
+  "price": 110,
+  "image": "https://www.afamilyfeast.com/wp-content/uploads/2025/08/Texas-Hash-new3.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Basmati Rice",
+    "Minced Beef",
+    "Onions",
+    "Special Spices",
+    "Nuts"
+  ],
+  "allergens": [
+    "Nuts (Optional)"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a02108f4ff0d683da734618"
+  },
+  "name": "Classic Mac and Cheese",
+  "price": 120,
+  "image": "https://www.yummytummyaarthi.com/wp-content/uploads/2024/01/mac-and-cheese-1.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "Macaroni",
+    "Cheddar Cheese Sauce",
+    "Breadcrumbs",
+    "Milk"
+  ],
+  "allergens": [
+    "Milk",
+    "Gluten"
+  ],
+  "isFeatured": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a0211114ff0d683da734619"
+  },
+  "name": "Cheesy Beefy Loaded Fries",
+  "price": 90,
+  "image": "https://bbq-heroes.com/wp-content/uploads/pulled-beef-loaded-fries-feature.jpg",
+  "category": "Fries",
+  "ingredients": [
+    "French Fries",
+    "Melted Cheddar",
+    "Minced Beef",
+    "Jalapenos",
+    "Pickles"
+  ],
+  "allergens": [
+    "Milk"
+  ],
+  "isFeatured": true,
+  "__v": 0
+}]
