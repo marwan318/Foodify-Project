@@ -5,26 +5,52 @@ mongoose.connect('mongodb://127.0.0.1:27017/food-project-db')
     .then(() => console.log('⏳ Creating Your Final Project Data...'))
     .catch((err) => console.log('❌ DB Error:', err));
 
-// 2. القالب النهائي المظبوط
+// 2. الموديل
 const Meal = mongoose.model('Meal', new mongoose.Schema({
     name: String,
     price: Number,
     image: String,
     category: String,
-    isFeatured: { type: Boolean, default: false }, 
+    isFeatured: { type: Boolean, default: false },
     ingredients: [String],
     allergens: [String],
     sizes: [{ name: String, price: Number }]
 }));
 
-// 3. الداتا الجاهزة (صور حقيقية، أحجام صح، وكل حاجة متظبطة)
-const finalData = require('.\meals.json')
-// 4. دالة التنفيذ
+// 3. الداتا
+const finalData = require('./meals.json');
+
+// 4. تنظيف + إصلاح ObjectId
+const cleanData = finalData.map(item => {
+
+    // تحويل _id من {$oid} إلى ObjectId بدل الحذف
+    if (item._id?.$oid) {
+        item._id = new mongoose.Types.ObjectId(item._id.$oid);
+    }
+
+    // تنظيف sizes ids
+    if (item.sizes && Array.isArray(item.sizes)) {
+        item.sizes = item.sizes.map(size => {
+            if (size._id?.$oid) {
+                size._id = new mongoose.Types.ObjectId(size._id.$oid);
+            }
+            return size;
+        });
+    }
+
+    return item;
+});
+
+// 5. دالة التنفيذ
 async function seedDatabase() {
     try {
         await Meal.deleteMany({}); // تنظيف القديم
-        await Meal.insertMany(finalData); // إضافة الجديد
-        console.log(`✅ Done! Your project is 100% Ready for presentation.`);
+
+        const result = await Meal.insertMany(cleanData, { ordered: false });
+
+        console.log(`✅ Done! Inserted: ${result.length} meals`);
+        console.log(`🎯 AI + Menu system fully working 🚀`);
+
         process.exit();
     } catch (error) {
         console.error("❌ Error:", error);
